@@ -10,9 +10,10 @@
 		DA26124B264FF276007DCA6B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA26124A264FF276007DCA6B /* AppDelegate.swift */; };
 		DA26124D264FF276007DCA6B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA26124C264FF276007DCA6B /* SceneDelegate.swift */; };
 		DA26124F264FF276007DCA6B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA26124E264FF276007DCA6B /* ViewController.swift */; };
-		DA261252264FF276007DCA6B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DA261250264FF276007DCA6B /* Main.storyboard */; };
 		DA261254264FF277007DCA6B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DA261253264FF277007DCA6B /* Assets.xcassets */; };
 		DA261257264FF277007DCA6B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DA261255264FF277007DCA6B /* LaunchScreen.storyboard */; };
+		DAB6E8142660BF460052F1D0 /* InfinateScrollTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAB6E8132660BF460052F1D0 /* InfinateScrollTableView.swift */; };
+		DAB6E8162660BF930052F1D0 /* InfinateScrollTableViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAB6E8152660BF930052F1D0 /* InfinateScrollTableViewDelegate.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,10 +21,11 @@
 		DA26124A264FF276007DCA6B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DA26124C264FF276007DCA6B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		DA26124E264FF276007DCA6B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		DA261251264FF276007DCA6B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		DA261253264FF277007DCA6B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DA261256264FF277007DCA6B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DA261258264FF277007DCA6B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DAB6E8132660BF460052F1D0 /* InfinateScrollTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfinateScrollTableView.swift; sourceTree = "<group>"; };
+		DAB6E8152660BF930052F1D0 /* InfinateScrollTableViewDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfinateScrollTableViewDelegate.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,10 +61,11 @@
 				DA26124A264FF276007DCA6B /* AppDelegate.swift */,
 				DA26124C264FF276007DCA6B /* SceneDelegate.swift */,
 				DA26124E264FF276007DCA6B /* ViewController.swift */,
-				DA261250264FF276007DCA6B /* Main.storyboard */,
 				DA261253264FF277007DCA6B /* Assets.xcassets */,
 				DA261255264FF277007DCA6B /* LaunchScreen.storyboard */,
 				DA261258264FF277007DCA6B /* Info.plist */,
+				DAB6E8132660BF460052F1D0 /* InfinateScrollTableView.swift */,
+				DAB6E8152660BF930052F1D0 /* InfinateScrollTableViewDelegate.swift */,
 			);
 			path = VerticalScrollViewExample;
 			sourceTree = "<group>";
@@ -126,7 +129,6 @@
 			files = (
 				DA261257264FF277007DCA6B /* LaunchScreen.storyboard in Resources */,
 				DA261254264FF277007DCA6B /* Assets.xcassets in Resources */,
-				DA261252264FF276007DCA6B /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -137,23 +139,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DAB6E8142660BF460052F1D0 /* InfinateScrollTableView.swift in Sources */,
 				DA26124F264FF276007DCA6B /* ViewController.swift in Sources */,
 				DA26124B264FF276007DCA6B /* AppDelegate.swift in Sources */,
 				DA26124D264FF276007DCA6B /* SceneDelegate.swift in Sources */,
+				DAB6E8162660BF930052F1D0 /* InfinateScrollTableViewDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		DA261250264FF276007DCA6B /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				DA261251264FF276007DCA6B /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		DA261255264FF277007DCA6B /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -216,7 +212,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -271,7 +267,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
